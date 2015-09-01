@@ -7,11 +7,16 @@ public class TurtleWorld
     {
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
+        turtle.forward(100);
         turtle.setPenColor(Color.YELLOW);
-        turtle.penDown();
+        
+        turtle.setPenWidth(10);
 
+
+        
         Turtle friend = new Turtle(turtleWorld);
         friend.setPenColor(Color.GREEN);
+        friend.setPenWidth(20);
 
         friend.backward(350);
         
@@ -20,70 +25,7 @@ public class TurtleWorld
         friend.forward(500);
         friend.backward(500);
         
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
-        turtle.forward(5);
-        turtle.turn(5);
+
      
     }
 }
