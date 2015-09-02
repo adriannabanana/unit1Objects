@@ -7,23 +7,34 @@ public class TurtleWorld
     {
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
-        turtle.forward(100);
-        turtle.setPenColor(Color.YELLOW);
-        
-        turtle.setPenWidth(10);
-
-
-        
         Turtle friend = new Turtle(turtleWorld);
+        friend.penUp();
+        turtle.penUp();
+        
+        while (turtle.getYPos() != 100)  {
+            Thread.sleep(100);
+            turtle.forward(5);
+        }
+        
+        turtle.turnLeft();
+        while (turtle.getXPos() != 100) {
+            Thread.sleep(100);
+            turtle.forward(5);
+        }
+        
+        turtle.setPenColor(Color.YELLOW);
+        turtle.setPenWidth(75);
+        turtle.penDown();
+        turtle.forward(1);
+
         friend.setPenColor(Color.GREEN);
         friend.setPenWidth(20);
 
-        friend.backward(350);
-        
+        friend.backward(300);
         friend.turnRight();
         friend.penDown();
-        friend.forward(500);
-        friend.backward(500);
+        friend.forward(300);
+        friend.backward(700);
         
 
      
