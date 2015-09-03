@@ -72,14 +72,17 @@ public class TurtleWorld
             i+=3;
     }
     turtle.penUp();
+    turtle.setPenWidth(50);
     turtle.turn(180);
-    turtle.forward(400);
+    turtle.forward(500);
     turtle.turnLeft();
     turtle.forward(200);
     turtle.setPenColor(Color.ORANGE);
     turtle.penDown();
     turtle.turnLeft();
-    turtle.forward(175);
+    turtle.forward(185);
+
+   
     
     }
 }

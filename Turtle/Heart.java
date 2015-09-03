@@ -8,15 +8,17 @@ public class Heart
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
         Turtle friend = new Turtle(turtleWorld);
-        int i = 60;
+        int i = 0;
         turtle.penDown();
-        while (i<i)  {
+        turtle.setPenColor(Color.BLACK);
+        
+        while (i<60)  {
             Thread.sleep(5);
             turtle.forward(1);
-            turtle.penUp();
-            turtle.turnLeft();
-            turtle.forward(1);
-            turtle.penDown();
+//             turtle.penUp();
+//             turtle.turnLeft();
+//             turtle.forward(1);
+//             turtle.penDown();
             i+=1;
         }
     }
